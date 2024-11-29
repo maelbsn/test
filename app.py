@@ -16,6 +16,3 @@ def index():
         texte_entree = request.form.get("texte_entree", "")
         texte_nettoye = nettoyer_texte(texte_entree)
     return render_template("index.html", texte_nettoye=texte_nettoye)
-
-if __name__ == "__main__":
-    app.run(debug=True, port=5005)
