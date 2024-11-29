@@ -1,0 +1,137 @@
+<!-- Page des compteurs (compteurs.html) -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteurs</title>
+    
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="../static/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Signika:wght@300..700&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../static/favicon.ico" type="image/x-icon">
+</head>
+<body data-page="counters">
+    <!-- Barre de navigation -->
+    <nav>
+        <a href="../templates/index.html">Home</a>
+        <a href="#">compteurs</a>
+        <div class="animation start-home"></div>
+      </nav>
+    <!-- Contenu de la page des compteurs -->
+    <div class="container">
+        <div class="chapter-counters">
+            <h2>Compteurs par Chapitre</h2>
+
+            <!-- Section des compteurs -->
+            <!-- Chapitre 1 -->
+            <div class="counter" id="chapter1">
+                <h3>Chapitre 1</h3>
+                <p id="count1" onclick="makeEditable('count1')">0</p>
+                <button onclick="increment('count1')">+</button>
+                <button onclick="decrement('count1')">-</button>
+            </div>
+
+            <!-- Chapitre 2 -->
+            <div class="counter" id="chapter2">
+                <h3>Chapitre 2</h3>
+                <p id="count2" onclick="makeEditable('count2')">0</p>
+                <button onclick="increment('count2')">+</button>
+                <button onclick="decrement('count2')">-</button>
+            </div>
+
+            <!-- Chapitre 3 -->
+            <div class="counter" id="chapter3">
+                <h3>Chapitre 3</h3>
+                <p id="count3" onclick="makeEditable('count3')">0</p>
+                <button onclick="increment('count3')">+</button>
+                <button onclick="decrement('count3')">-</button>
+            </div>
+
+            <!-- Chapitre 4 -->
+            <div class="counter" id="chapter4">
+                <h3>Chapitre 4</h3>
+                <p id="count4" onclick="makeEditable('count4')">0</p>
+                <button onclick="increment('count4')">+</button>
+                <button onclick="decrement('count4')">-</button>
+            </div>
+
+            <!-- Chapitre 5 -->
+            <div class="counter" id="chapter5">
+                <h3>Chapitre 5</h3>
+                <p id="count5" onclick="makeEditable('count5')">0</p>
+                <button onclick="increment('count5')">+</button>
+                <button onclick="decrement('count5')">-</button>
+            </div>
+
+            <!-- Chapitre 6 -->
+            <div class="counter" id="chapter6">
+                <h3>Chapitre 6</h3>
+                <p id="count6" onclick="makeEditable('count6')">0</p>
+                <button onclick="increment('count6')">+</button>
+                <button onclick="decrement('count6')">-</button>
+            </div>
+
+            <!-- Chapitre 7 -->
+            <div class="counter" id="chapter7">
+                <h3>Chapitre 7</h3>
+                <p id="count7" onclick="makeEditable('count7')">0</p>
+                <button onclick="increment('count7')">+</button>
+                <button onclick="decrement('count7')">-</button>
+            </div>
+
+            <!-- Chapitre 8 -->
+            <div class="counter" id="chapter8">
+                <h3>Chapitre 8</h3>
+                <p id="count8" onclick="makeEditable('count8')">0</p>
+                <button onclick="increment('count8')">+</button>
+                <button onclick="decrement('count8')">-</button>
+            </div>
+
+            <!-- Chapitre 9 -->
+            <div class="counter" id="chapter9">
+                <h3>Chapitre 9</h3>
+                <p id="count9" onclick="makeEditable('count9')">0</p>
+                <button onclick="increment('count9')">+</button>
+                <button onclick="decrement('count9')">-</button>
+            </div>
+
+            <!-- Chapitre 10 -->
+            <div class="counter" id="chapter10">
+                <h3>Chapitre 10</h3>
+                <p id="count10" onclick="makeEditable('count10')">0</p>
+                <button onclick="increment('count10')">+</button>
+                <button onclick="decrement('count10')">-</button>
+            </div>
+
+            <!-- Case Total -->
+            <div class="counter" id="total-counter">
+                <h3>Total</h3>
+                <p id="totalCounter">0</p>
+            </div>
+        </div>
+        
+        <button onclick="resetCounters()">Réinitialiser tous les compteurs</button>
+        <button onclick="location.href='../templates/index.html'">Retour</button>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 TxtCleaner - Tous droits réservés</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> </a></li>
+                <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto:contact@txtcleaner.com"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></li>
+                    
+            </ul>
+        </div>
+    </footer>
+    <!-- Script JS -->
+    <script src="../static/script.js" defer></script>
+</body>
+</html>
