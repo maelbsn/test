@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     animation: fadeIn 1s ease-in;
-    background-image: url('/Users/mael17/Desktop/mon_projet_flask./static/background2.jpg');
+    background-image: url('background2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
