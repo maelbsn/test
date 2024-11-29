@@ -1,0 +1,336 @@
+/* Style global */
+body {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in;
+    background-image: url('/Users/mael17/Desktop/mon_projet_flask./static/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 0px; /* Compense la hauteur de la navbar pour éviter le chevauchement */
+}
+
+/* Animation globale */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Menu principal en haut */
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Barre supérieure pour le chronomètre et l'heure */
+
+.content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 20px auto  ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    animation: fadeInScale 0.6s ease-in-out; /* Apparition avec un effet de zoom */
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.digital-clock, #chronoDisplay {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Contenu principal */
+
+
+@keyframes fadeInScale {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.container {
+    text-align: center;
+    padding: 20px 10px; /* Ajuste l'espacement autour du contenu */
+    margin: 0 auto;
+}
+/* Textareas */
+textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 2px;
+    font-size: 16px;
+    resize: vertical;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+/* Notes */
+.notes-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Compteurs */
+.chapter-counters {
+    margin-top: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInScale 0.8s ease-in-out;
+    max-width: 1300px;
+}
+.chapter-counters h2 {
+    margin-top: 55px; /* Ajustez la valeur pour descendre le titre */
+    text-align: center; /* Facultatif : centre le texte */
+    font-size: 24px; /* Facultatif : ajuste la taille */
+    font-weight: bold; /* Facultatif : rend le texte plus proéminent */
+}
+
+.counter {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 120px;
+}
+
+.counter:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.counter h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.container h1 {
+    color: #ffffff; /* Définit la couleur du texte en blanc */
+    text-align: center; /* Facultatif : centre le texte */
+    font-size: 28px; /* Facultatif : ajuste la taille du texte */
+    font-weight: bold; /* Facultatif : rend le texte plus proéminent */
+}
+.counter p {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #555;
+}
+
+.counter button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.counter button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative; /* Supprime les comportements inattendus */
+    bottom: 0; /* Pas nécessaire ici grâce à flexbox */
+    width: 100%; /* S'assure qu'il prend toute la largeur */
+}
+/* Boutons */
+button {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #3498db; /* Couleur bleue */
+    color: #fff; /* Texte blanc */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+button:hover {
+    background-color: #2980b9; /* Bleu plus foncé au survol */
+    transform: scale(1.05); /* Agrandissement léger au survol */
+}
+
+button:active {
+    transform: scale(0.95); /* Réduction légère lors du clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Réduction de l'ombre */
+}
+
+/* Bouton d'arrêt */
+button.stop-button {
+    background-color: #e74c3c; /* Rouge */
+}
+
+button.stop-button:hover {
+    background-color: #c0392b; /* Rouge foncé au survol */
+}
+
+/* Bouton de réinitialisation */
+button.reset-button {
+    background-color: #f4f4f4; /* Gris clair */
+    color: #333; /* Texte sombre */
+    border: 1px solid #ccc; /* Bordure discrète */
+}
+
+button.reset-button:hover {
+    background-color: #bdc3c7; /* Gris plus foncé au survol */
+}
+#total-counter {
+    text-align: center; /* Centre tout le contenu */
+    background-color: #f4f4f9; /* Fond clair */
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    margin: 20px auto; /* Centre horizontalement et ajoute de l'espace autour */
+    max-width: 300px; /* Largeur maximale de la case */
+}
+
+#totalCounter {
+    font-size: 40px; /* Taille de police plus grande */
+    font-weight: bold; /* Gras */
+    color: #2c3e50; /* Couleur du texte */
+    margin: 0; /* Supprime les marges */
+    display: block; /* Force une nouvelle ligne pour s'assurer que le texte est centré */
+}
+nav {
+    margin: 27px auto 0;
+  
+    position: relative;
+    width: 605px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a:nth-child(1) {
+    width: 300px;
+  }
+  a:nth-child(2) {
+    width: 300px;
+  }
+  nav .start-home, a:nth-child(1):hover~.animation {
+    width: 300px;
+    left: 0;
+    background-color: #1abc9c;
+  }
+  nav .start-about, a:nth-child(2):hover~.animation {
+    width: 305px;
+    left: 300px;
+    background-color: #e74c3c;
+  }
+
+ /* Conteneur des icônes */
+.social-links {
+    display: flex; /* Place les éléments côte à côte */
+    justify-content: center; /* Centre les icônes horizontalement */
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Ajoute un espace entre les icônes */
+}
+
+/* Icônes individuelles */
+.social-links li a {
+    color: #ffffff; /* Couleur par défaut des icônes */
+    font-size: 24px; /* Taille des icônes */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition pour les effets */
+}
+
+/* Effet au survol */
+.social-links li a:hover {
+    color: #1abc9c; /* Change la couleur au survol */
+    transform: scale(1.2); /* Agrandit légèrement l'icône */
+}
