@@ -7,5 +7,42 @@
 </head>
 <body>
     <h1>test1</h1>
+    <!-- Menu de navigation -->
+    <nav>
+      <a href="#">Home</a>
+      <div class="animation start-home"></div>
+    </nav>
+  
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <!-- Nettoyeur de Texte -->
+        <div class="text-cleaner">
+            <h2>Collez votre texte :</h2>
+            <textarea id="texte_entree" rows="5" placeholder="Collez ici..."></textarea>
+            <h2>Texte Nettoyé :</h2>
+            <textarea id="texte_nettoye" rows="5" readonly></textarea>
+            <p id="copieMessage"></p>
+        </div>
+
+        <!-- Notes -->
+        <div class="notes-section">
+            <h2>Notes :</h2>
+            <textarea id="notes" rows="5" placeholder="Écris tes notes ici..."></textarea>
+            <button onclick="exportNotes()">Exporter les Notes</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 TxtCleaner - Tous droits réservés</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> </a></li>
+                <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto:contact@txtcleaner.com"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
